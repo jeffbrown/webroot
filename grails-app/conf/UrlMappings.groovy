@@ -13,6 +13,12 @@ class UrlMappings {
         // so this may or may not be what you want
         "/signin"(controller: 'web', action: 'signin')
 
+        // You might also be looking for something like this instead
+        // which may or may not be problematic depending on other
+        // factors in your app...
+        // "/$action"(controller: 'web')
+
+
         "500"(view:'/error')
 	}
 }
